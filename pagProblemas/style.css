@@ -1,0 +1,37 @@
+body {
+           
+}
+/* Estilo básico para el contenido oculto*/ 
+.oculto {
+  display: none;
+}
+.columna {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.p1aumentosdescuentos{
+    justify-content: center;
+    border: 3px solid #2371be;
+    padding: 1em;
+}
+
+button {
+    background-color: #2371be;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4b5db4;
+}
+
+#img1{
+
+    width: 100px;
+}
+/* Hará que los parrafos no tengan espacio entre ellos */
+.sinespacios{
+    margin-top:0; 
+    margin-bottom:0;
+}
