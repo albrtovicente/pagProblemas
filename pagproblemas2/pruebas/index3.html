@@ -1,0 +1,59 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostrar Más</title>
+  <style>
+    .contenido {
+  display: none; /* Oculta el contenido inicial */
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="contenido" data-section="seccion1">
+    <!-- Contenido inicial visible -->
+    <p>Contenido de la sección 1.</p>
+  </div>
+
+  <button class="botonMostrar" data-target="seccion1">Mostrar Más</button>
+
+  <div class="contenido" data-section="seccion2">
+    <!-- Contenido inicial visible -->
+    <p>Contenido de la sección 2.</p>
+  </div>
+
+  <button class="botonMostrar" data-target="seccion2">Mostrar Más</button>
+
+  <!-- Agrega más secciones y botones según sea necesario -->
+
+</body>
+</html>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var botonesMostrar = document.querySelectorAll('.botonMostrar');
+  
+    botonesMostrar.forEach(function(boton) {
+      boton.addEventListener('click', function() {
+        var targetSection = this.getAttribute('data-target');
+        var contenido = document.querySelector('[data-section="' + targetSection + '"]');
+  
+        if (contenido.style.display === "none") {
+          contenido.style.display = "block";
+          this.textContent = "Mostrar Menos";
+        } else {
+          contenido.style.display = "none";
+          this.textContent = "Mostrar Más";
+        }
+      });
+    });
+  });
+</script>
+
+  

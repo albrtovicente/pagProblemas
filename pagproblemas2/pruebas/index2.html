@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostrar Más</title>
+<style>
+    #contenido {
+  display: none; /* Oculta el contenido inicial */
+}
+
+</style>  
+</head>
+<body>
+
+  <div class="contenido" id="contenido">
+    <!-- Contenido inicial visible -->
+    <p>Contenido visible inicial.</p>
+  </div>
+
+  <button id="botonMostrar" onclick="mostrarMas()">Mostrar Más</button>
+
+  <script >
+    function mostrarMas() {
+  var contenido = document.getElementById("contenido");
+  var botonMostrar = document.getElementById("botonMostrar");
+
+  if (contenido.style.display === "none") {
+    contenido.style.display = "block";
+    botonMostrar.textContent = "Mostrar Menos";
+  } else {
+    contenido.style.display = "none";
+    botonMostrar.textContent = "Mostrar Más";
+  }
+}
+
+  </script>
+</body>
+</html>

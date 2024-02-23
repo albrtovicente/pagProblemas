@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problemas matematicas 6º primaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Problemas de matamáticas para 6º de primaria</h1>
+
+    <a href="#aumentos_descuentos">problemas sobre aumentos y descuentos porcentuales
+    </a>
+
+    <section id="aumentos_descuentos">
+        
+        <h2>aumentos y descuentos porcentuales</h2>
+
+        <h3>Aumentos porcentuales explicación</h3>
+        <p>El año pasado un libro costaba 20€ ahora el libro a aumentado un 15% ¿cuanto cuesta el libro ahora?</p>
+
+        <div class="explicacion">
+            <div class="forma1">
+                <p><b>forma 1:</b></p>
+                <p>Precio inicial + Aumento = Precio Final </p>
+                <p>precio inicial: precio antes del aumento</p>
+                <p>Aumento: en este caso 15% de 20</p>
+                <p>Precio Final: precio después del aumento</p>
+
+                <p>Precio inicial + Aumento = Precio Final </p>
+                <p>20€ + 15%de20 = ? </p>
+                <p>Primero tenemos que averiguar el aumento.</p>
+                
+                <p>15% de 20 =  15 x 20 /100 = 3€</p>
+                <p>Por último, sumamos ambas cantidades</p>
+                <p>Precio inicial + Aumento = Precio Final </p>
+                <p>20€ + 3€ = 23€ </p>
+            </div>  
+ 
+            <div class="forma2">
+                <p><b>forma 2:</b></p>
+                <p>sumamos el precio inicial que es el 100% que indica el total al 15%</p>
+                <p>100% + 15% = 115%</p>
+                <p>Ahora debemos hacer el 115% sobre el precio inicial de 20€</p>
+                <p>115% de 20€ = 115 x 20 /100 = 23€</p>
+            </div>
+
+        </div>
+        
+
+        <div class="p1aumentosdescuentos">
+
+                <p>Una tienda tiene una oferta del 20% de descuento en todos los juguetes. Si un juguete cuesta $50, ¿cuánto costará después del descuento?</p>
+            <div class="columna">
+                <!-- Botón que activa/desactiva el despliegue -->
+                <div><button onclick="toggleContenido()">Solucion</button></div>
+                <div><img src="img\shop-150362_1280.png" id="img1" alt="tienda de juguetes"></div> 
+            </div>
+
+            <!-- Contenido oculto por defecto -->
+            <div id="problema1" class="oculto">
+                <p>Este es el contenido que se mostrará u ocultará.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // Función para mostrar u ocultar el contenido
+        function toggleContenido() {
+        var contenido = document.getElementById("problema1");
+            if (contenido.style.display === "none") {
+                contenido.style.display = "block";
+            } else {
+                contenido.style.display = "none";
+            }
+            }
+    </script>
+</body>
+</html>
